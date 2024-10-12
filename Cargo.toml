@@ -1,0 +1,24 @@
+[package]
+name = "study-guide-filler"
+version = "0.1.0"
+authors = ["Nvt5"]
+license = "MIT"
+description = "Summarize a list of topics via wikipedia in rust"
+readme = "README.md"
+edition = "2021"
+repository = "https://github.com/Nvt500/Study-Guide-Filler"
+homepage = "https://github.com/Nvt500/Study-Guide-Filler"
+keywords = ["summarize", "wikipedia", "wasm"]
+
+[dependencies]
+eframe = "0.29.1"
+egui = "0.29.1"
+rfd = "0.15.0"
+
+[target.'cfg(not(target_arch = "wasm32"))'.dependencies]
+wikipedia = "0.4.0"
+
+[target.'cfg(target_arch = "wasm32")'.dependencies]
+wikipedia-wasm = "0.1.1"
+wasm-bindgen-futures = "0.4"
+serde_json = "1.0.128"
