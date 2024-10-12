@@ -8,7 +8,7 @@ Topics would be anything on wikipedia as it uses wikipedia for summarizing.
 
 It uses egui for the gui and is tested on windows and wasm (trunk serve).
 
-[Demo it online]()
+[Demo it online](https://nvt500.github.io/Study-Guide-Filler/)
 
 # Example Input File
 
